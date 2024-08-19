@@ -8,10 +8,10 @@ let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
-    renderLeads(myLeads)
+    render(myLeads)
 }
 
-function renderLeads(leads){
+function render(leads){
     let listItems = ""
     for(let i = 0; i < leads.length; i++){
     listItems += `<li>
@@ -39,13 +39,13 @@ tabBtn.addEventListener("click", function(){
 delBtn.addEventListener("click", function(){
     localStorage.clear()
     myLeads = []
-    renderLeads(myLeads)
+    render(myLeads)
 })
 
 saveBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value)
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     inputEl.value = ""
-    renderLeads(myLeads)
+    render(myLeads)
 })
 
