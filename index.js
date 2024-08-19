@@ -23,11 +23,6 @@ function render(leads){
 ulEl.innerHTML = listItems
 }
 
-const tabs = [
-    {url: window.location.href}
-]
-
-
 tabBtn.addEventListener("click", function(){    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url)
