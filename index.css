@@ -1,3 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 150px;
+}
+
 ul{
     list-style-type: square;
+}
+
+input{
+    max-width: 150px;
+    margin-bottom: 2px;
+    border: none;
+    border-bottom: 1px solid rgb(175, 175, 175);
+
+}
+
+button{
+    background-color: #FFF186;
+    color: #FD3F5C;
+    border: 1px ridge #FFF186;
+    font-family: Century Gothic;
+    border-radius: 3px;
+    margin:2px 0;
 }
